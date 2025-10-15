@@ -10,7 +10,7 @@ type CardProps = {
 const BodyCard: React.FC<CardProps> = (props: CardProps): React.ReactNode => {
     const { imageSource, description } = props
     return (
-        <View style={styles.container}>
+        <View>
             <View style={styles.card_container}>
                 <View style={styles.circle}>
                         <Image style={styles.Image} source={imageSource} />
@@ -20,17 +20,13 @@ const BodyCard: React.FC<CardProps> = (props: CardProps): React.ReactNode => {
                 </View>
             </View>
         </View>
+
     )
 }
 
 export default BodyCard
 
 const styles = StyleSheet.create({
-
-    container:{
-        height: '30%',
-        
-    },
 
     card_container:{
         height: 140,
@@ -76,7 +72,7 @@ const styles = StyleSheet.create({
     font:{
         color: CardColors.BLANCO,
         fontSize: 20,
-        fontWeight: 500
+        fontWeight: 500,
     }
 
 })

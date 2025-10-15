@@ -11,7 +11,7 @@ export class CardColors {
     /*Color de fuente*/
     static NEGRO_OSCURO = "#161616"
 
-
+    static GRIS = "#626971"
 
 }
 

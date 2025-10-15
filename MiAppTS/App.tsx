@@ -3,14 +3,17 @@ import Header from './components/Header';
 import { CARD_ITEMS } from './data/CardItems';
 import React from 'react';
 import BodyCard from './components/BodyCard';
+import { CardColors } from './CardColor';
+import TravelList from './components/TravelList';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View>
       <Header />
        <ScrollView
        horizontal
        showsHorizontalScrollIndicator={false}
+       style={{height:180}} 
        >
             {
             CARD_ITEMS.length > 0 ? (
@@ -26,15 +29,10 @@ export default function App() {
             )
             }
           </ScrollView>
+         <TravelList />
     </View>
+    
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'black'
-  },
-
- 
-});
+const styles = StyleSheet.create({});
