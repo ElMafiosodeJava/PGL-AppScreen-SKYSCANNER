@@ -5,6 +5,7 @@ import React from 'react';
 import BodyCard from './components/BodyCard';
 import { CardColors } from './CardColor';
 import TravelList from './components/TravelList';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
             }
           </ScrollView>
          <TravelList />
+         <Footer />
     </View>
     
   );

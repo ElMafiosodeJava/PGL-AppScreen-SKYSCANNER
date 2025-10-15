@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     container:{
         display: 'flex',
         margin: 20,
-        marginTop: 0 
+        marginTop: 0, 
     },
 
     plane_logo:{
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     },
 
     show_container:{
-        margin: 20,
+        margin: 5,
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'row',
