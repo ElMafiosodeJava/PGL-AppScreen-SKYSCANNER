@@ -6,7 +6,7 @@ export class CardColors {
 
     /*Colores de iconos*/ 
     static VERDE_TURQUESA = "#00a698"
-    static CYAN_MUY_CLARO = "#e3f0ff"
+    static CYAN_MUY_CLARO = "#d0eeec"
 
     /*Color de fuente*/
     static NEGRO_OSCURO = "#161616"
