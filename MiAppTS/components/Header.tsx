@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         display:'flex',
         flexDirection: 'row',
-        marginTop: 40
+        marginTop: 40,
+
     },
 
     sky_logo: {
         width: 64,
         height: 64,
-        resizeMode:'contain'
-
+        resizeMode:'contain',
     },
 
     font_title: {
@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
         width: '75%',
         alignSelf: 'center',
         marginTop: 20,
-        marginBottom: 45
-
+        marginBottom: 45,
+        
     },
 
     logo_and_text:{
@@ -108,9 +108,10 @@ const styles = StyleSheet.create({
 
     logo_text:{
         marginTop: 14,
-        fontSize: 14,
+        fontSize: 16,
         color: CardColors.BLANCO,
-        fontWeight: 600
+        fontWeight: 600,
+        flexShrink: 1,  
     }
 
 

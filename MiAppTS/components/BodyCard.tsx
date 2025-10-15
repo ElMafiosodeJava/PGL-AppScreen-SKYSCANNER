@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 
     card_container:{
         height: 140,
-        width: 160,
+        width: 170,
         backgroundColor: CardColors.AZUL_MUY_OSCURO,
         display: 'flex',
         margin: 20,
