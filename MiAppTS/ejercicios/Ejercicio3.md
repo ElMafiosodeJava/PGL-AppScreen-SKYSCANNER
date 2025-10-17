@@ -4,13 +4,6 @@ componente propio.
 Voy a tratar de explicar el componente BodyCard, lo que lo compone, cómo lo implementé y su funcionalidad.
 
 
-
-
-![alt text](image-1.png)
-
-
-
-
 Primero que nada, el componente consta de un "Type CardProps" que son el cuerpo de las props, propias del propio BodyCard, un atributo imagen, otro llamado descripción que luego procederemos a desestructurar más adelante dentro del componente BodyCard, porque nos interesa que según el objeto a mostrar, esas props cambien, en este caso nos interesa hacer el mismo cuadrado pero con diferentes imágenes y descripciones.
 
 Luego vendría siendo el componente BodyCard que es constante, a la que se le paasan las props y son desestructuradas para llamarlas en la estructura del componente. Tenemos varios Views, el que forma la caja donde van a ir el resto de Views, hacemos un cuadrado con el View, "card_container", le establecemos una altura de 140 píxeles y 170 de ancho, lo cual genera un cuadrado perfecto, con un color de fondo azul oscuro, nos interesa que tenga la propiedad flex ya que nos permite adaptar el contenido según las necesidades, establecemos un margin 20 para que el contenido no esté pegado al borde del cuadrado y pueda mantener un estilizado, el flex-end para que todos los textos estén pegados al margin establecido abajo del todo.
