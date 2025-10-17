@@ -3,7 +3,13 @@ componente propio.
 
 Voy a tratar de explicar el componente BodyCard, lo que lo compone, cómo lo implementé y su funcionalidad.
 
+
+
+
 ![alt text](image-1.png)
+
+
+
 
 Primero que nada, el componente consta de un "Type CardProps" que son el cuerpo de las props, propias del propio BodyCard, un atributo imagen, otro llamado descripción que luego procederemos a desestructurar más adelante dentro del componente BodyCard, porque nos interesa que según el objeto a mostrar, esas props cambien, en este caso nos interesa hacer el mismo cuadrado pero con diferentes imágenes y descripciones.
 
@@ -15,6 +21,11 @@ Luego tenemos el View "text_container" al que solo le doy estilos y para adecuar
 
 Por último, uso la propiedad font para darle el formato de color, tamaño y negrita al texto. Pasándole la prop desestructurada "descripción" como texto ya que al igual que con la imagen, cada objeto creado tendrá su propio texto e imagen creada.
 
+
+
 ![alt text](image-2.png) ![alt text](image-3.png)
+
+
+
 
 De último, el app, utilicé un ScrollView donde dentro irían los objetos de BodyCard ya que quiero renderizar en función de si están en pantalla o si directamente no hay objetos que mostrar. Indiqué que el scroll fuera lateral para poder mostrar contenido debajo con "showsHorizontalScrollIndicator={false}" y un tamaño de altura máximo de 180 píxeles. dentro del ScrollView llamé a un array de objetos que exporté de CardItems.ts llamado CARD_ITEMS, allí simplemente almaceno los objetos a los que llamaré para desesctructurarlos más adelante en "imagenSource" y "descripción". Creé una condición con CARD_ITEMS.length > 0 ?():() que implica que si el array de objetos CARD_ITEMS su longitud es mayor a 0, se renderizan los elementos del interior, si la longitud es 0, es decir, es un array vacío y no hay nada que mostrar, entonces mostraría que "no hay cards que mostrar". En nuestro caso tenemos tres objetos dentro del array CARD_ITEMS en el archivo CardItems.ts que se componen por el id, la clave maestra que permitirá diferenciar un objeto de otro por el map que más tarde usaremos para ordenar los objetos. el imageSource y la descripción que cada uno tiene. Entonces a CARD_ITEMS le pasamos un map que permite ir de uno en uno recorriendo ese array renderizando cada objeto diferente del interior siendo reutilizables, aprovechamos y llamamos al componente BodyCar con la estructura del objeto montada, y pasando por parámetro cada imagen y descripción del objeto card que el map recorre del array CARD_ITEMS.
