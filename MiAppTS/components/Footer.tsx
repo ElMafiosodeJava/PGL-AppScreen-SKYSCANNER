@@ -6,19 +6,19 @@ const Footer = () => {
     return (
         <View style={styles.container}>
             <View>
-                <Image source={require('../assets/icons8-búsqueda-48.png')} style={styles.finder}/>
+                <Image source={require('../assets/icons8-búsqueda-48.png')} style={styles.finder} />
                 <Text style={styles.font}>Explore</Text>
             </View>
             <View>
-                <Image source={require('../assets/icons8-más-de-50.png')}style={styles.logo}/>
+                <Image source={require('../assets/icons8-más-de-50.png')} style={styles.logo} />
                 <Text>Drops</Text>
             </View>
             <View>
-                <Image source={require('../assets/icons8-me-gusta-50.png')} style={styles.Image}/>
+                <Image source={require('../assets/icons8-me-gusta-50.png')} style={styles.Image} />
                 <Text>Saved</Text>
             </View>
             <View>
-                <Image source={require('../assets/icons8-usuario-masculino-en-círculo-50.png')}style={styles.Image}/>
+                <Image source={require('../assets/icons8-usuario-masculino-en-círculo-50.png')} style={styles.Image} />
                 <Text>Profile</Text>
             </View>
         </View>
@@ -29,7 +29,7 @@ export default Footer
 
 const styles = StyleSheet.create({
 
-    container:{
+    container: {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -37,27 +37,27 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         height: '18%',
         margin: 0,
-        padding:0
+        padding: 0
     },
 
-    logo:{
+    logo: {
         width: 37,
         height: 37,
-        transform: [{rotate: '90deg'}],
+        transform: [{ rotate: '90deg' }],
 
     },
 
-    finder:{
+    finder: {
         tintColor: CardColors.AZUL_MARINO,
         width: 37,
         height: 37
     },
 
-    font:{
+    font: {
         color: CardColors.AZUL_MARINO
     },
 
-    Image:{
+    Image: {
         width: 37,
         height: 37
     }
